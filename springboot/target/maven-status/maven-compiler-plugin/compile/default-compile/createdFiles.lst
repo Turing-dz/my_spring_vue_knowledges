@@ -1,0 +1,5 @@
+com\hckj\springboot\entity\Admin.class
+com\hckj\springboot\SpringbootApplication.class
+com\hckj\springboot\service\AdminService.class
+com\hckj\springboot\dao\AdminDao.class
+com\hckj\springboot\controller\AdminController.class

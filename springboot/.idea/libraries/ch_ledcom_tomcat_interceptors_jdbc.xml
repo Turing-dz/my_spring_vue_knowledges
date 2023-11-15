@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ch.ledcom.tomcat.interceptors.jdbc" type="repository">
+    <properties maven-id="ch.ledcom.tomcat.interceptors:tomcat-jdbc-interceptors:0.4" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/tomcat-jdbc-interceptors-0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

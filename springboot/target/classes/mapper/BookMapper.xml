@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hckj.springboot.dao.BookDao">
+<!--    <select id="findAll" resultType="com.hckj.springboot.entity.Admin">-->
+<!--        select * from admin-->
+<!--    </select>-->
+    <select id="findBySearch" resultType="com.hckj.springboot.entity.Book">
+        select book.*,type.name as typeName from book left join type on book.typeId=type.id
+        <where>
+            <if test="params != null and params.name != null and params.name != ''">
+                and name like concat('%', #{ params.name }, '%')
+            </if>
+            <if test="params != null and params.author != null and params.author != ''">
+                and author like concat('%', #{ params.author }, '%')
+            </if>
+        </where>
+    </select>
+</mapper>
